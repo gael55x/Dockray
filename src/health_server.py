@@ -76,11 +76,11 @@ class HealthServer:
         
         # Start server in background task
         self._server_task = asyncio.create_task(self.server.serve())
-        logger.info(f"🏥 Health server started on port {self.port}")
+        logger.info(f"Health server started on port {self.port}")
     
     async def stop(self):
         """Stop the health server"""
         if self.server:
             self.server.should_exit = True
             await self._server_task
-            logger.info("🏥 Health server stopped") 
+            logger.info("Health server stopped") 
