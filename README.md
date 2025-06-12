@@ -43,5 +43,8 @@ docker compose -f examples/basic.yml -f dockray.override.yml up -d
 3. Add tests for new functionality  
 4. Submit a pull request
 
+## Changelog
+See [CHANGELOG.md](CHANGELOG.md) for detailed release notes and version history.
+
 ## License
 MIT - see [LICENSE](LICENSE) for details.
